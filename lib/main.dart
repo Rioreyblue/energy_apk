@@ -1,4 +1,4 @@
-import 'package:energy_apk/homepage.dart';
+import 'package:energy_apk/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
 
       routes: {
-        '/': (context)=> Homepage()
+        '/': (context)=> HomeScreen()
       },
     );
   }

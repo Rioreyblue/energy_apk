@@ -7,13 +7,17 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
+      alignment: Alignment.center,
       children: [
         //Row
-        Container(
-          height: MyContainer().small,
-          width: MyContainer().small,
-          color: MyColors().first,
-        ),
+        Row(
+          // mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              height: MyContainer().small,
+              width: MyContainer().small,
+              color: MyColors().first,
+            ),
         //Column
         Container(
           height: MyContainer().small,
@@ -25,6 +29,53 @@ class HomePage extends StatelessWidget {
           height: MyContainer().small,
           width: MyContainer().small,
           color: MyColors().third,
+        ),
+          ],
+        ),
+
+        Column(
+          // mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              height: MyContainer().small,
+              width: MyContainer().small,
+              color: MyColors().first,
+            ),
+        //Column
+        Container(
+          height: MyContainer().small,
+          width: MyContainer().small,
+          color: MyColors().second,
+        ),
+        //Row
+        Container(
+          height: MyContainer().small,
+          width: MyContainer().small,
+          color: MyColors().third,
+        ),
+          ],
+        ),
+        Row(
+          // mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              height: MyContainer().small,
+              width: MyContainer().small,
+              color: MyColors().first,
+            ),
+        //Column
+        Container(
+          height: MyContainer().small,
+          width: MyContainer().small,
+          color: MyColors().second,
+        ),
+        //Row
+        Container(
+          height: MyContainer().small,
+          width: MyContainer().small,
+          color: MyColors().third,
+        ),
+          ],
         ),
       ],
     );

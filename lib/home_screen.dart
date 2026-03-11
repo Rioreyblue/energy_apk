@@ -1,13 +1,14 @@
+import 'package:energy_apk/Pages/home_page.dart';
 import 'package:flutter/material.dart';
 
-class Homepage extends StatefulWidget {
-  const Homepage({super.key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
   @override
-  State<Homepage> createState() => _HomepageState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomepageState extends State<Homepage> {
+class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
 
   final List<String> _labels = [
@@ -23,7 +24,7 @@ class _HomepageState extends State<Homepage> {
   void initState() {
     super.initState();
     _pages = [
-      const Homepage(),
+      HomePage(),
       const Center(child: Text('Monitoring Page')),
       const Center(child: Text('Goals Page')),
       const Center(child: Text('Settings Page')),
