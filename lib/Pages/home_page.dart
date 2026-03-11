@@ -6,30 +6,27 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      //body
-      body: Stack(
-        children: [
-          //Row
-         Container(
+    return Stack(
+      children: [
+        //Row
+        Container(
           height: MyContainer().small,
           width: MyContainer().small,
           color: MyColors().first,
-         ),
-         //Column
-         Container(
+        ),
+        //Column
+        Container(
           height: MyContainer().small,
           width: MyContainer().small,
           color: MyColors().second,
-         ),
+        ),
         //Row
-         Container(
+        Container(
           height: MyContainer().small,
           width: MyContainer().small,
           color: MyColors().third,
-         ),
-        ],
-      )
+        ),
+      ],
     );
   }
 }

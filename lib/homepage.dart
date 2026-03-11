@@ -23,7 +23,7 @@ class _HomepageState extends State<Homepage> {
   void initState() {
     super.initState();
     _pages = [
-      Homepage(),
+      const Homepage(),
       const Center(child: Text('Monitoring Page')),
       const Center(child: Text('Goals Page')),
       const Center(child: Text('Settings Page')),
